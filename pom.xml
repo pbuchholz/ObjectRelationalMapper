@@ -1,0 +1,51 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>de.bu</groupId>
+	<artifactId>ObjectRelationalMapper</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>ObjectRelationalMapper</name>
+	<packaging>jar</packaging>
+
+	<properties>
+		<test.database.schema>HealthMetrics</test.database.schema>
+		<test.database.username>healthmetrics</test.database.username>
+		<test.database.password>healthmetrics</test.database.password>
+		<test.database.url>jdbc:derby://localhost:1527/${test.database.schema}</test.database.url>
+		<test.database.driver>org.apache.derby.jdbc.ClientDriver40</test.database.driver>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+		</dependency>
+
+		<!-- Testing dependencies. -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.jboss.arquillian.junit</groupId>
+			<artifactId>arquillian-junit-container</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.jboss.arquillian.container</groupId>
+			<artifactId>arquillian-glassfish-embedded-3.1</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>fish.payara.extras</groupId>
+			<artifactId>payara-embedded-all</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
+		</dependency>
+	</dependencies>
+
+</project>

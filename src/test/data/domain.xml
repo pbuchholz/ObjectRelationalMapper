@@ -1,0 +1,13 @@
+<domain>
+	<applications />
+	<resources>
+		<jdbc-resource pool-name="HealthMetrics_DataSource"
+			jndi-name="jdbc/HealthMetrics_DataSource" />
+
+		<jdbc-connection-pool datasource-classname="org.apache.derby.jdbc.BasicClientDataSource40"
+			name="HealthMetrics_DataSource" res-type="javax.sql.DataSource">
+			<property name="url"
+				value="jdbc:derby://localhost:1527/HealthMetrics;user=healthmetrics;password=healthmetrics" />
+		</jdbc-connection-pool>
+	</resources>
+</domain>

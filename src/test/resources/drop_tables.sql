@@ -1,0 +1,2 @@
+drop table healthmetrics
+drop table serviceendpointinstances
