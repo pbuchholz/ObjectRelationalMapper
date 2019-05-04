@@ -1,11 +1,11 @@
-package de.bu.governance.healthmetrics.storage.sql.interpreter;
+package orm.sql.interpreter;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 
-import de.bu.governance.healthmetrics.storage.Criteria;
-import de.bu.governance.healthmetrics.storage.Criteria.CriteriaOperator;
-import de.bu.governance.healthmetrics.storage.CriteriasBuilder.Criterias;
+import orm.Criteria;
+import orm.Criteria.CriteriaOperator;
+import orm.CriteriasBuilder.Criterias;
 
 @ApplicationScoped
 public class SqlCriteriaInterpreter {

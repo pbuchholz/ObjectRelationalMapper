@@ -1,8 +1,8 @@
-package de.bu.governance.healthmetrics.storage.sql.generator;
+package orm.sql.generator;
 
 import java.util.List;
 
-import de.bu.governance.healthmetrics.storage.sql.FieldMapping;
+import orm.sql.FieldMapping;
 
 public class FieldMappingTargetBag {
 	private Object target;

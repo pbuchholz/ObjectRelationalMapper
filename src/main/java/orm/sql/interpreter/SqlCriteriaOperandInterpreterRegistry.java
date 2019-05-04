@@ -1,4 +1,4 @@
-package de.bu.governance.healthmetrics.storage.sql.interpreter;
+package orm.sql.interpreter;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

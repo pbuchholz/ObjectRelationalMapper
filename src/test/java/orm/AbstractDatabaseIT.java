@@ -1,4 +1,4 @@
-package de.bu.governance.healthmetrics.storage;
+package orm;
 
 import java.io.IOException;
 import java.net.URISyntaxException;

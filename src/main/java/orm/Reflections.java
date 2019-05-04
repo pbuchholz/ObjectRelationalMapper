@@ -1,4 +1,4 @@
-package de.bu.governance.healthmetrics.storage;
+package orm;
 
 import java.lang.reflect.Method;
 import java.util.stream.Stream;

@@ -1,4 +1,4 @@
-package de.bu.governance.healthmetrics.storage;
+package orm;
 
 /**
  * Represents a Criteria used to describe a set of domain objects.

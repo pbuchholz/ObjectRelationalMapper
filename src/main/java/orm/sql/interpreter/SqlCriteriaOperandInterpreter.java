@@ -1,4 +1,4 @@
-package de.bu.governance.healthmetrics.storage.sql.interpreter;
+package orm.sql.interpreter;
 
 /**
  * Interprets operands to use them in sql statements.

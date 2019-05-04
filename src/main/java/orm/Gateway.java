@@ -1,8 +1,8 @@
-package de.bu.governance.healthmetrics.storage;
+package orm;
 
 import java.util.List;
 
-import de.bu.governance.healthmetrics.storage.CriteriasBuilder.Criterias;
+import orm.CriteriasBuilder.Criterias;
 
 /**
  * Gateway which enables access to defined types.

@@ -1,4 +1,4 @@
-package de.bu.governance.healthmetrics.storage.sql;
+package orm.sql;
 
 import java.lang.reflect.Method;
 import java.util.List;

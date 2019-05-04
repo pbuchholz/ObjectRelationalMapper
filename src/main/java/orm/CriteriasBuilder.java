@@ -1,10 +1,10 @@
-package de.bu.governance.healthmetrics.storage;
+package orm;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-import de.bu.governance.healthmetrics.storage.Criteria.CriteriaConjunction;
-import de.bu.governance.healthmetrics.storage.Criteria.CriteriaOperator;
+import orm.Criteria.CriteriaConjunction;
+import orm.Criteria.CriteriaOperator;
 
 /**
  * Represent a builder for {@link Criteria} objects.
@@ -62,8 +62,7 @@ public final class CriteriasBuilder {
 		/**
 		 * Adds the field operand for the current {@link Criteria}.
 		 * 
-		 * @param fieldOperand
-		 *            the field name which is operated on.
+		 * @param fieldOperand the field name which is operated on.
 		 * @return The next step necessary.
 		 */
 		CriteriaOperatorStep<T> fieldOperand(String fieldOperand);

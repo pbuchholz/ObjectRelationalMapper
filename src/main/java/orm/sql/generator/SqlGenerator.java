@@ -1,9 +1,9 @@
-package de.bu.governance.healthmetrics.storage.sql.generator;
+package orm.sql.generator;
 
 import java.util.List;
 
-import de.bu.governance.healthmetrics.storage.CriteriasBuilder.Criterias;
-import de.bu.governance.healthmetrics.storage.sql.FieldMapping;
+import orm.CriteriasBuilder.Criterias;
+import orm.sql.FieldMapping;
 
 /**
  * Generates SQL statements.

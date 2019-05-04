@@ -1,4 +1,4 @@
-package de.bu.governance.healthmetrics.storage.sql;
+package orm.sql;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,7 +7,7 @@ import java.lang.annotation.Target;
 
 import javax.inject.Qualifier;
 
-import de.bu.governance.healthmetrics.storage.Gateway;
+import orm.Gateway;
 
 /**
  * Describes the type of {@link Gateway} which should be injected.

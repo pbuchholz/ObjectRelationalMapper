@@ -19,6 +19,7 @@ import de.bu.governance.healthmetrics.model.HealthMetricsIdentifier;
 import de.bu.governance.healthmetrics.model.ServiceEndpointInstanceIdentifier;
 import de.bu.governance.healthmetrics.storage.AbstractDatabaseIT;
 import de.bu.governance.healthmetrics.storage.sql.SqlGateway;
+import healthmetrics.persistence.HealthMetricsSqlGateway;
 
 public class HealthMetricsSqlGatewayDatabaseIT extends AbstractDatabaseIT {
 

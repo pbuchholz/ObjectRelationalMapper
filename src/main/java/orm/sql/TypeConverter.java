@@ -1,4 +1,4 @@
-package de.bu.governance.healthmetrics.storage.sql;
+package orm.sql;
 
 /**
  * Converts to and from type of a database field.

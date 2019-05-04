@@ -1,10 +1,10 @@
-package de.bu.governance.healthmetrics.storage.sql;
+package orm.sql;
 
 import java.lang.reflect.Method;
 import java.util.Optional;
 import java.util.stream.Stream;
 
-import de.bu.governance.healthmetrics.storage.Reflections;
+import orm.Reflections;
 
 /**
  * Abstract base class of {@link FieldMapper}s.

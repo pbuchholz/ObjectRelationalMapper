@@ -1,4 +1,4 @@
-package de.bu.governance.healthmetrics.storage.sql.generator;
+package orm.sql.generator;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
@@ -7,10 +7,10 @@ import java.util.stream.Stream;
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 
-import de.bu.governance.healthmetrics.storage.CriteriasBuilder.Criterias;
-import de.bu.governance.healthmetrics.storage.sql.FieldMapping;
-import de.bu.governance.healthmetrics.storage.sql.FieldMappingException;
-import de.bu.governance.healthmetrics.storage.sql.interpreter.SqlCriteriaInterpreter;
+import orm.CriteriasBuilder.Criterias;
+import orm.sql.FieldMapping;
+import orm.sql.FieldMappingException;
+import orm.sql.interpreter.SqlCriteriaInterpreter;
 
 @ApplicationScoped
 public class DefaultSqlGenerator implements SqlGenerator {

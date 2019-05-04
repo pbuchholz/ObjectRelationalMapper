@@ -1,4 +1,4 @@
-package de.bu.governance.healthmetrics.storage.sql.interpreter;
+package orm.sql.interpreter;
 
 /**
  * Implementation of {@link SqlCriteriaOperandInterpreter} which interprets

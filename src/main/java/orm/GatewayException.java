@@ -1,4 +1,4 @@
-package de.bu.governance.healthmetrics.storage;
+package orm;
 
 /**
  * {@link Exception} which is thrown if an exception occurs in a {@link Gateway}

@@ -1,4 +1,4 @@
-package de.bu.governance.healthmetrics.storage.sql;
+package orm.sql;
 
 /**
  * Exception thrown in case fields mappings could not be made.

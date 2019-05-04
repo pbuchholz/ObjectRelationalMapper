@@ -1,4 +1,4 @@
-package de.bu.governance.healthmetrics.storage;
+package orm;
 
 public class StorageSystemException extends RuntimeException {
 

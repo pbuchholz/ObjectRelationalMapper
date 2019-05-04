@@ -1,4 +1,4 @@
-package de.bu.governance.healthmetrics.storage.sql;
+package orm.sql;
 
 import java.lang.reflect.Method;
 import java.sql.Connection;
@@ -13,12 +13,12 @@ import java.util.stream.Collectors;
 import javax.inject.Inject;
 import javax.sql.DataSource;
 
-import de.bu.governance.healthmetrics.storage.CriteriasBuilder.Criterias;
-import de.bu.governance.healthmetrics.storage.Gateway;
-import de.bu.governance.healthmetrics.storage.GatewayException;
-import de.bu.governance.healthmetrics.storage.Reflections;
-import de.bu.governance.healthmetrics.storage.sql.generator.FieldMappingTargetBag;
-import de.bu.governance.healthmetrics.storage.sql.generator.SqlGenerator;
+import orm.CriteriasBuilder.Criterias;
+import orm.Gateway;
+import orm.GatewayException;
+import orm.Reflections;
+import orm.sql.generator.FieldMappingTargetBag;
+import orm.sql.generator.SqlGenerator;
 
 /**
  * Abstract {@link Gateway} which uses a underlying relational database to
@@ -167,8 +167,8 @@ public abstract class AbstractSqlGateway<I, T> implements Gateway<I, T>, FieldMa
 		}
 	}
 
-	/**l
-	 * Returns the name of the database table the gateway is operating on.
+	/**
+	 * l Returns the name of the database table the gateway is operating on.
 	 * 
 	 * @return
 	 */
