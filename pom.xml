@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.bu</groupId>
@@ -13,39 +14,67 @@
 		<test.database.password>healthmetrics</test.database.password>
 		<test.database.url>jdbc:derby://localhost:1527/${test.database.schema}</test.database.url>
 		<test.database.driver>org.apache.derby.jdbc.ClientDriver40</test.database.driver>
+		<junit.version>4.12</junit.version>
+		<apache.commons.version>3.9</apache.commons.version>
+		<java.ee.version>7.0</java.ee.version>
+		<arquillian.version>1.4.1.Final</arquillian.version>
+		<payara.embedded.version>5.191</payara.embedded.version>
+		<mockito.version>1.10.19</mockito.version>
 	</properties>
 
 	<dependencies>
 		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-api</artifactId>
+			<version>${java.ee.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
+			<version>${apache.commons.version}</version>
 		</dependency>
-
-		<!-- Testing dependencies. -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.jboss.arquillian.junit</groupId>
 			<artifactId>arquillian-junit-container</artifactId>
+			<version>${arquillian.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.jboss.arquillian.container</groupId>
 			<artifactId>arquillian-glassfish-embedded-3.1</artifactId>
+			<version>1.0.2</version>
 		</dependency>
 		<dependency>
 			<groupId>fish.payara.extras</groupId>
 			<artifactId>payara-embedded-all</artifactId>
+			<version>${payara.embedded.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-all</artifactId>
+			<version>${mockito.version}</version>
 		</dependency>
 	</dependencies>
+
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.0</version>
+				<configuration>
+					<source>10</source>
+					<target>10</target>
+				</configuration>
+			</plugin>
+		</plugins>
+
+
+	</build>
 
 </project>
