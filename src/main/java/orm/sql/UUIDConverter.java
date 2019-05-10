@@ -1,4 +1,4 @@
-package orm.sql;ssss
+package orm.sql;
 
 import java.util.UUID;
 

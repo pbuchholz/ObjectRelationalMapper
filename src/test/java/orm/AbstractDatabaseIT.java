@@ -18,9 +18,6 @@ import org.jboss.shrinkwrap.api.spec.WebArchive;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.runner.RunWith;
-import org.mockito.Mock;
-
-import de.bu.governance.healthmetrics.model.ServiceEndpointFactory;
 
 /**
  * Abstract base class for tests which use arquillian for ejb tests.
@@ -40,15 +37,11 @@ public abstract class AbstractDatabaseIT {
 	 */
 	@Deployment
 	public static WebArchive createDeployment() {
-		return ShrinkWrap.create(WebArchive.class, "de.bu.governance.healthmetrics.storagetest.war")
-				.addPackages(true, Gateway.class.getPackage()) //
+		return ShrinkWrap.create(WebArchive.class, "orm.war").addPackages(true, Gateway.class.getPackage()) //
 				.setWebXML("web.xml") //
 				.addAsWebInfResource(EmptyAsset.INSTANCE, "beans.xml") //
 				.addAsWebInfResource("glassfish-resources.xml");
 	}
-
-	@Mock
-	protected ServiceEndpointFactory serviceEndpointFactory;
 
 	protected abstract DataSource getTestDataSource();
 
